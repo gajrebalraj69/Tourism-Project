@@ -15,36 +15,26 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
+    scroll-behavior:auto;
+    scroll-padding-top: 10rem;
 }
 
 section {
     padding: 5rem 9%;
 }
 
+
+/* all the button */
 .btn {
     margin-top: 1rem;
     display: inline-block;
-    border: 0.2rem solid rgb(238, 235, 235);
-    color: rgb(245, 240, 240);
+    border: 0.2rem solid rgba(239, 239, 234, 0.86);
+    color: rgb(19, 20, 20);
     cursor: pointer;
     background: none;
     font-size: 1.7rem;
     padding: 1rem 3rem;
     border-radius: 40px;
-}
-
-.btn:hover {
-    background-color: rgb(12, 12, 12);
-    color: rgb(246, 242, 242);
-}
-
-
-
-.btn:hover {
-    background: rgb(0, 0, 0);
-    color: white;
 }
 
 .heading {
@@ -55,10 +45,22 @@ section {
 }
 
 .header {
-    padding: 2rem 9%;
-    display: flex;
+    padding: 0rem 2%;
+    font-size: 20px;
+    color: black;
+    display: ruby-text;
     align-items: center;
+    background-color: #c0f7e5;
 }
+
+a.heading {
+    color: black; /* Text color */
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: none; /* Remove underline */
+}
+
+
 
 .header.active {
     background: none;
@@ -69,12 +71,7 @@ section {
     /* Remove z-index */
 }
 
-.header .logo {
-    margin-right: auto;
-    font-size: 2.5rem;
-    color: black;
-    font-weight: bolder;
-}
+/* contact form*/
 
 .wrapper1 {
     margin-left: auto;
@@ -89,7 +86,7 @@ section {
 }
 
 .wrapper1 .title1 h1 {
-    color: green;
+    color: rgb(162, 8, 8);
     text-align: center;
     margin-bottom: 25px;
     font-size: 3.5rem;
@@ -186,68 +183,106 @@ i {
     display: none;
 }
 
+/* Styles for the search form */
 .search-form {
     position: fixed;
+    /* Fixed position to keep the form in place */
     top: 0;
+    /* Position the form at the top of the viewport */
     left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgb(14, 54, 186);
+    /* Position the form at the left of the viewport */
+    height: 60%;
+    /* Set the height of the form to 60% of the viewport height */
+    width: 60%;
+    /* Set the width of the form to 60% of the viewport width */
+    background: none;
+    /* Set the background of the form to none */
     display: flex;
+    /* Use flexbox for layout */
     align-items: center;
+    /* Align items vertically in the center */
     justify-content: center;
+    /* Align items horizontally in the center */
     z-index: 10000;
+    /* Set the z-index to ensure it appears above other elements */
     transform: translateY(-110%);
+    /* Move the form 110% of its height above the viewport */
 }
 
+/* Styles for the active state of the search form */
 .search-form.active {
     transform: translateY(0%);
+    /* Move the form back to its original position */
 }
 
+/* Styles for the close button */
 #close-search {
     position: absolute;
+    /* Absolute position for the close button */
     top: 1.5rem;
+    /* Position the close button 1.5rem from the top */
     right: 2.5rem;
+    /* Position the close button 2.5rem from the right */
     cursor: pointer;
-    color: white;
+    /* Set cursor to pointer for interaction */
+    color: rgb(15, 11, 11);
+    /* Set text color */
     font-size: 5rem;
+    /* Set font size */
 }
 
-#close-search:hover {
-    color: green;
-}
-
+/* Styles for the form */
 form {
     width: 90vw;
+    /* Set the width of the form to 90% of the viewport width */
     margin: 0 2rem;
+    /* Set margin */
     padding-bottom: 2rem;
+    /* Set padding */
     border-bottom: 0.2rem solid white;
+    /* Set border */
     display: flex;
+    /* Use flexbox for layout */
     align-items: center;
+    /* Align items vertically in the center */
 }
 
+/* Styles for the input field */
 form input {
     width: 100%;
+    /* Set width to 100% */
     font-size: 2rem;
+    /* Set font size */
     color: white;
+    /* Set text color */
     text-transform: none;
+    /* Disable text transformation */
     background: none;
+    /* Set background to none */
     padding-right: 2rem;
+    /* Set padding */
 }
 
+/* Styles for the input placeholder */
 form input::placeholder {
     color: #aaa;
+    /* Set placeholder text color */
 }
 
+/* Styles for the label */
 form label {
     font-size: 3rem;
+    /* Set font size */
     cursor: pointer;
+    /* Set cursor to pointer */
     color: white;
+    /* Set text color */
 }
 
-form label:hover {
+
+/* form label:hover {
     color: green;
-}
+} */
 
 .home {
     padding: 0;
@@ -264,53 +299,48 @@ form label:hover {
 }
 
 .home .content {
-    width: 50rem;
-    text-align: start;
-    position: absolute;
+    width: 2%;
+    text-align: center;
+    position: relative;
     top: 100px;
+    bottom: auto;
     right: 0;
 
 
 }
 
-                                                    /* Exploring With */
+/* Exploring With */
 
+/* Span */
 .home .content span {
     line-height: 0;
-    position: static;
-    font-size: 4rem;
-    color: #9370DB;
-    bottom: 20cm;
     position: absolute;
-    top: 65px;
-    right: 30;
-    margin-top: 20px;
-
+    font-size: 3rem;
+    color: #9370DB;
+    top: 70px;
+    bottom: 30cm;
+    right: 50;
+    margin-top: 50px;
 }
 
-/* NEVER STOP */
-
+/* H3 (NEVER STOP) */
 .home .content h3 {
-
-    font-size: 4rem;
-    color: #BA55D3;
-    padding-top: rem;
-    padding-inline-end: 1rem;
+    font-size: 5rem;
+    line-height: 2.5;
+    margin-top: 2px;
+    color: #78C1F3;
     text-transform: uppercase;
-
 }
 
-                                                           /* Bharatdarshan.Com Your Gateway To India's Adventures */
-
-
+/* P Bharatdarshan.Com Your Gateway To India's Adventures*/
 .home .content p {
-
-    line-height: 0;
-    color: #c6d70e;
-    font-size: 2.0rem;
-    padding: rem 0;
-    margin-top: 40px;
+    line-height: 1rem;
+    color: #FBFADA;
+    font-size: 3.0rem;
+    margin-top: 38px;
 }
+
+
 
 .category .box-container {
     display: -ms-grid;
@@ -371,21 +401,21 @@ form label:hover {
 }
 
 
-                                                          /* packages :  with out mouse colour change  */
+/* packages :  with out mouse color change  */
 
 .packages .box-container .box {
     text-align: center;
-    background: #FF7ED4;
+    background: #c39bb6;
     border: 0.2rem solid #34118d;
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
 
-                                                               /* packages: this is on click mouse colour change */
+/* packages: this is on click mouse colour change */
 
 .packages .box-container .box:hover {
-    background: #e361e5e2;
+    background: #c299c4e2;
 }
 
 .packages .box-container .box:hover .content>* {
@@ -436,17 +466,19 @@ form label:hover {
 .packages .box-container .box .content .price {
     font-size: 2rem;
     color: #219150;
+
 }
-                                                             /* images : in the end  */
+
+/* images : in the end  */
 .footer {
     background: -webkit-gradient(linear,
             left top,
             left bottom,
             from(rgba(0, 0, 0, 0.5)),
             to(rgba(0, 0, 0, 0.5))),
-        url(../image/pexels-sebastian-arie-voortman-165505.jpg) no-repeat;
+        url(../image/mainpage/adv.png) no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../image/pexels-sebastian-arie-voortman-165505.jpg) no-repeat;
+        url(../image/mainpage/adv.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -469,20 +501,23 @@ form label:hover {
 .footer .box-container .box a {
     display: block;
     font-size: 1.4rem;
-    color: #fff;
+    color: whitesmoke;
     padding: 1rem 0;
+    background-color: transparent;
 }
 
-                                                                       /* icons colous :  in end */
+
+
+/* icons colous :  in end */
 .footer .box-container .box a i {
     color: #eb23e1;
     padding-right: 0.5rem;
 }
 
-                                                                  /* on hover colour:  change in end  */
+/* on hover colour:  change in end  */
 .footer .box-container .box a:hover {
     color: #FFEAA7;
-    
+
 }
 
 .footer .box-container .box a:hover i {
@@ -499,7 +534,8 @@ form label:hover {
 }
 
 .footer .credit span {
-    color: #E1AA74;
+    color: #cec1b4;
+    background-color: #eedd44;
 }
 
 @media (max-width: 1200px) {
@@ -639,5 +675,106 @@ form label:hover {
     text-align: start;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-70%);
+
 }
+.close {
+     color: whitesmoke;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+
+    text-decoration: none;
+    cursor: pointer;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+/* Show the popup when its ID matches the URL fragment */
+.popup:target {
+    display: block;
+}
+
+/* Style the close button */
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('your_background_image_url_here.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .navbar a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
